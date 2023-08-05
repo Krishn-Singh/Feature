@@ -19,7 +19,7 @@ export default function Home() {
   const [theme, setTheme] = useState("light");
 
   useEffect(() => {
-    const apiUrl = "http://localhost:3001/api/data";
+    const apiUrl = "https://feature-backend-web.onrender.com/api/data";
     fetch(apiUrl)
       .then((response) => response.json())
       .then((data) => {
